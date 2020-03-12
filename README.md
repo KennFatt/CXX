@@ -1,6 +1,19 @@
 # C++ Courses
 This list is taken from YouTube channel: [The Cherno](https://www.youtube.com/user/TheChernoProject)
 
+### Compiler Information
+**Compiler**: g++ (gcc version: 9.2.1 20200306)  
+**OS**: Linux 5.4.0-4-amd64  
+**CXX Flags**: -Wall -std=c++11 -g  
+
+### Editor configuration
+**Editor**: VS Code (x64)  
+**clang-format**: WebKit
+
+---
+
+## List of samples
+
 1. Pointers                                     [X]
 2. References                                   [X]
 3. Classes                                      [X]
