@@ -8,7 +8,7 @@ This list is taken from YouTube channel: [The Cherno](https://www.youtube.com/us
 
 ### Editor configuration
 **Editor**: VS Code (x64)  
-**clang-format**: WebKit
+**clang-format**: Microsoft
 
 ---
 
@@ -29,14 +29,13 @@ This list is taken from YouTube channel: [The Cherno](https://www.youtube.com/us
 13. Interfaces (pure virtual functions)         [X]
 14. Visibility                                  [X]
 15. Array                                       [X]
-16. Strings                                     [ ]
-17. String Literal                              [ ]
-18. Const                                       [ ]
-19. Mutable                                     [ ]
-20. Member Initializer                          [ ]
-21. Ternary                                     [ ]
-22. Create and Instantiate an Object            [ ]
-23. New keyword (memory allocation)             [ ]
-24. Implicit and explicit conversion            [ ]
-25. Operators overloading                       [ ]
-26. This keyword (pointer)                      [ ]
+16. Strings                                     [X]
+17. String Literal                              [X]
+18. Const and Mutable                           [X]
+19. Member Initializer                          [X]
+20. Ternary                                     [X]
+21. Create and Instantiate an Object            [X]
+22. Auto keyword                                [ ]
+22. Implicit and explicit conversion            [ ]
+23. Operators overloading                       [ ]
+24. This keyword (pointer)                      [ ]
