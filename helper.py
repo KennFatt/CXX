@@ -3,6 +3,7 @@
 import os
 import sys
 import time
+import shutil
 
 
 def get_timestamp():
@@ -27,12 +28,11 @@ def new_sample(sample_name):
     os.makedirs(os.path.join(sample_path, "out"), 0o777)
     print(f"New directory has been created at: {sample_path}")
 
-    with open(os.path.join(sample_path, "main.cpp"), "w") as f:
-        main = "int main(int argc, char** argv) {\n\t\n}\n"
+    # Copying `main.cc` and `Makefile`
+    shutil.copy(src=".boilerplate/main.cc", dst=sample_path)
+    shutil.copy(src=".boilerplate/Makefile", dst=sample_path)
 
-        # Print the main function
-        f.write(f"{main}\n")
-
+    with open(os.path.join(sample_path, "main.cc"), "a+") as f:
         footer = {
             "Created on": get_timestamp(),
             "Compiler": get_gcc_version(),
