@@ -28,17 +28,22 @@ def new_sample(sample_name):
     print(f"New directory has been created at: {sample_path}")
 
     with open(os.path.join(sample_path, "main.cpp"), "w") as f:
+        main = "int main(int argc, char** argv) {\n\t\n}\n"
+
+        # Print the main function
+        f.write(f"{main}\n")
+
         footer = {
-            "Created on: ": get_timestamp(),
-            "Compiler: ": get_gcc_version(),
-            "OS: ": get_kernel_release(),
-            "Flags: ": "-Wall -std=c++11 -g"
+            "Created on": get_timestamp(),
+            "Compiler": get_gcc_version(),
+            "OS": get_kernel_release(),
+            "Flags": "-Wall -std=c++11 -g"
         }
 
         # Print the footer
         f.write("/**\n")
         for k in footer:
-            f.write(f" * {k}{footer[k]}\n")
+            f.write(f" * {k}: {footer[k]}\n")
         f.write(" */\n")
 
         f.close()
